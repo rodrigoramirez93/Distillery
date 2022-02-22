@@ -47,7 +47,7 @@ namespace BusinessLogic.Implementations
 
             var platformFee = (paymentDto.PaymentAmount * UniversalFeesExchangeService.CalculateFee(DateTime.Now));
 
-            card.Balance -= (paymentDto.PaymentAmount - platformFee);
+            card.Balance -= (paymentDto.PaymentAmount + platformFee);
             _context.Update(card);
             _context.SaveChanges();
 
