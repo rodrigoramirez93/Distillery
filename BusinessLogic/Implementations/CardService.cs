@@ -1,6 +1,5 @@
 ﻿using BusinessLogic.Dtos;
 using BusinessLogic.Interfaces;
-using System.Linq;
 using Domain;
 
 namespace BusinessLogic.Implementations
